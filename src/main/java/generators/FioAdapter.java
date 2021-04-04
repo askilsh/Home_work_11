@@ -1,6 +1,6 @@
 package generators;
 
-public class FioAdapter implements Generator<Fio> {
+public final class FioAdapter implements Generator<Fio> {
     private final FioGenerator fioGenerator;
 
     public FioAdapter() {
@@ -8,7 +8,7 @@ public class FioAdapter implements Generator<Fio> {
     }
 
     @Override
-    public void generateParams(int code) {
+    public void generateParams(final int code) {
         fioGenerator.generateParams(code);
     }
 

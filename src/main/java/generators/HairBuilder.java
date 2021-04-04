@@ -2,7 +2,7 @@ package generators;
 
 import person.appearance.hair.Hair;
 
-public class HairBuilder {
+public final class HairBuilder {
     private String color = "";
     private int numType;
 
@@ -21,8 +21,8 @@ public class HairBuilder {
         return this;
     }
 
-    public HairBuilder setColor(String color) {
-        this.color = color;
+    public HairBuilder setColor(final String colors) {
+        this.color = colors;
         return this;
     }
 

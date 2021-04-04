@@ -4,11 +4,11 @@ public class Hair {
     private String color;
     private String type;
 
-    public void setType(String type) {
+    public final void setType(final String type) {
         this.type = type;
     }
 
-    public void setColor(String color) {
+    public final void setColor(final String color) {
         this.color = color;
     }
 
