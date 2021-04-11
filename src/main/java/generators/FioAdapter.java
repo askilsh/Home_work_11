@@ -14,6 +14,7 @@ public final class FioAdapter implements Generator<Fio> {
 
     @Override
     public Fio buildResponse() {
-        return fioGenerator.getFio();
+        return new Fio(fioGenerator.getLastName(),
+                fioGenerator.getFirstName(),fioGenerator.getMiddleName());
     }
 }

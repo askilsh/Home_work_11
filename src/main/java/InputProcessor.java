@@ -5,7 +5,7 @@ public class InputProcessor {
 
         if (input.trim().matches("\\d{4}")) {
             // Создаём Person
-            result = Facade.getPerson(input);
+            result = GetPerson.getPerson(input);
         } else {
             result = "Неверный ввод.";
         }

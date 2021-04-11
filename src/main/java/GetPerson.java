@@ -4,7 +4,7 @@ import generators.PhysGenerator;
 import person.Person;
 import person.Phone;
 
-public class Facade {
+public class GetPerson {
 
     public static String getPerson(final String input) {
         Factory factory = new Factory();
